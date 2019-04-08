@@ -1,0 +1,2 @@
+# senko
+leetcode ver.golang 
