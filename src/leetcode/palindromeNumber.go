@@ -1,5 +1,7 @@
 package leetcode
 
+import "math"
+
 /*
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
@@ -19,6 +21,23 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 */
 
 func PalindromeNumber(x int) bool {
-
-	return false
+	if x < 0 {
+		return false
+	} else {
+		pnumber := 0
+		var onumber int = x
+		for x != 0 {
+			if pnumber > math.MaxInt32/10 {
+				return false
+			} else {
+				pnumber = pnumber*10 + x%10
+				x = x / 10
+			}
+		}
+		if pnumber == onumber {
+			return true
+		} else {
+			return false
+		}
+	}
 }

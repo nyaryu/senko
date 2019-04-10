@@ -15,4 +15,8 @@ func main() {
 	var res2 int
 	res2 = leetcode.ReverseInteger(x)
 	fmt.Println(res2)
+	var y = 11234543211
+	var res3 bool
+	res3 = leetcode.PalindromeNumber(y)
+	fmt.Println(res3)
 }
