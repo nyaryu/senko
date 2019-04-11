@@ -43,6 +43,24 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 */
 
 func RomantoInteger(s string) int {
-
-	return 0
+	roma := make(map[string]int)
+	roma["I"] = 1
+	roma["V"] = 5
+	roma["X"] = 10
+	roma["L"] = 50
+	roma["C"] = 100
+	roma["D"] = 500
+	roma["M"] = 1000
+	var length = len(s)
+	result := roma[s[length-1:length]]
+	for i := length - 2; i >= 0; i-- {
+		left := roma[s[i:i+1]]
+		right := roma[s[i+1:i+2]]
+		if left < right {
+			result = result - left
+		} else if left >= right {
+			result = result + left
+		}
+	}
+	return result
 }
