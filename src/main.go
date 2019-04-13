@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	var z = "MCMXCIV"
-	res4 := leetcode.RomantoInteger(z)
-	fmt.Println(res4)
+	var x = []string{"c", "c", "c"}
+	var res = leetcode.LongestCommonPrefix(x)
+	fmt.Println(res)
 }
