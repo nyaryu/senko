@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	var x = []string{"c", "c", "c"}
-	var res = leetcode.LongestCommonPrefix(x)
+	x := "(])"
+	var res = leetcode.ValidParentheses(x)
 	fmt.Println(res)
 }
