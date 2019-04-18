@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	y := []int{1, 2, 2, 3}
-	var res1 = leetcode.RemoveDuplicatesfromSortedArray(y)
+	y := []int{0, 1, 2, 3}
+	target := 4
+	var res1 = leetcode.SearchInsert(y, target)
 	fmt.Println(res1)
 }
