@@ -6,8 +6,7 @@ import (
 )
 
 func main() {
-	y := []int{0, 1, 2, 3}
-	target := 4
-	var res1 = leetcode.SearchInsert(y, target)
+	//y := []int{0, 1, 2, 3}
+	var res1 = leetcode.CountAndSay(5)
 	fmt.Println(res1)
 }
