@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	//y := []int{0, 1, 2, 3}
-	var res1 = leetcode.CountAndSay(5)
+
+	x := "b   a    "
+	var res1 = leetcode.LengthofLastWord(x)
 	fmt.Println(res1)
 }
