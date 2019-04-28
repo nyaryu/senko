@@ -6,8 +6,7 @@ import (
 )
 
 func main() {
-
-	x := "b   a    "
-	var res1 = leetcode.LengthofLastWord(x)
+	str := "   10   10"
+	var res1 = leetcode.StringToInteger(str)
 	fmt.Println(res1)
 }
